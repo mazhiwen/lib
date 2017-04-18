@@ -1,0 +1,36 @@
+/*水平导航*/
+*{padding: 0;border: none;margin: 0;}
+
+/*bootstrap 字体图标*/
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../../../component/bootstrap/3.3.5/fonts/glyphicons-halflings-regular.eot');
+  src: url('../../../component/bootstrap/3.3.5/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../../../component/bootstrap/3.3.5/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../../../component/bootstrap/3.3.5/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../../../component/bootstrap/3.3.5/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon-user:before {
+  content: "\e008";
+}
+
+/**/
+
+#table{border-collapse: collapse;  }
+caption{border:1px solid black;}
+th{white-space:nowrap;border:1px solid black;padding: 5px 10px;font-size:15px;}
+td{border:1px solid black;word-break:break-all;text-align: center;padding: 5px;}
+
+
+
+
+

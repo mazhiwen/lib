@@ -1,0 +1,60 @@
+
+$animation-duriation-num:1;
+$animation-duriation:$animation-duriation-num+s;
+$animation-delay-num:$animation-duriation-num*1000/8;
+$wholelength:50;
+$dotlength:10;
+$dot-offset-length:$wholelength - $dotlength;
+
+
+/*
+纯CSS黑色小原点 旋转
+数学模型：8s  0-7 (8/8)    16s  0-16(16/8)  4s  0-4000(4000/8)  
+配置动画时间 :$animation-duriation-num 
+配置整体大小：$wholelength
+配置原点大小：$dotlength   $wholelength>$dotlength
+ */
+
+*{padding: 0;border: none;margin: 0;}
+
+
+#circle{width: $wholelength+px; height: $wholelength+px; margin:50px;position: relative; }
+
+.circle-square{width: 100%; height: 100%;position: absolute;}
+#circle>div:nth-child(1){}
+#circle>div:nth-child(2){ -moz-transform:rotate(45deg);}
+
+
+.circle-square>div{width: $dotlength+px; height: $dotlength+px;background-color: black;border-radius: 100%;position: absolute;-moz-animation:mydot $animation-duriation infinite;}
+.circle-square>div:nth-child(2){left: $dot-offset-length+px;}
+.circle-square>div:nth-child(3){left: $dot-offset-length+px;top: $dot-offset-length+px;}
+.circle-square>div:nth-child(4){top: $dot-offset-length+px;}
+
+.circle-square-1>div:nth-child(1){-moz-animation-delay: 0s;}
+.circle-square-2>div:nth-child(1){-moz-animation-delay: -+$animation-delay-num*7+ms;}
+.circle-square-1>div:nth-child(2){-moz-animation-delay: -+$animation-delay-num*6+ms;}
+.circle-square-2>div:nth-child(2){-moz-animation-delay: -+$animation-delay-num*5+ms;}
+.circle-square-1>div:nth-child(3){-moz-animation-delay: -+$animation-delay-num*4+ms;}
+.circle-square-2>div:nth-child(3){-moz-animation-delay: -+$animation-delay-num*3+ms;}
+.circle-square-1>div:nth-child(4){-moz-animation-delay: -+$animation-delay-num*2+ms;}
+.circle-square-2>div:nth-child(4){-moz-animation-delay: -+$animation-delay-num+ms;}
+
+@keyframes mydot
+{
+from {background: black;}
+12% {background: rgb(63,63,63);}
+25% {background: rgb(127,127,127);}
+37% {background: rgb(191,191,191);}
+50% {background: white;}
+62% {background: rgb(191,191,191);}
+75% {background: rgb(127,127,127);}
+87% {background: rgb(63,63,63);}
+to {background: black;}
+}
+
+
+
+
+
+
+

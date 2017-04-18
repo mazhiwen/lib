@@ -1,0 +1,74 @@
+﻿@charset "utf-8";
+/* CSS Document */
+html,body,div,img{margin:0;border:none;padding:0;}
+
+#content{background-color:red; width:100%;height:1000px;}
+
+#homeanimation{ width:70%;margin:auto;position:relative;/*font-size:0;*/ overflow:hidden; }
+
+#homeanimation>img:nth-child(2){ width:100%; display:block;}
+#homeanimation>div:nth-child(1){width:100%; height:100%;position:absolute;}
+#homeanimation>div:nth-child(1)>div{position:absolute;width:100%;height:100%; background-size:100% 100%;}
+#homeanimation>div:nth-child(1)>div:nth-child(1){ background-image:url(home-animation-arraow1.png);top:-100%;animation:myhomeanimation1 3s ease;-webkit-animation:myhomeanimation1 3s ease;}
+#homeanimation>div:nth-child(1)>div:nth-child(2){  background-image: url(home-animation-text1.png);animation:myhomeanimation 3s;-webkit-animation:myhomeanimation 3s;left:-100%;}
+#homeanimation>div:nth-child(1)>div:nth-child(3){ background-image:url(home-animation-arraow2.png);bottom:-100%;animation:myhomeanimation2 3s 3s;-webkit-animation:myhomeanimation2 3s 3s;}
+#homeanimation>div:nth-child(1)>div:nth-child(4){  background-image: url(home-animation-text2.png);animation:myhomeanimation 3s 3s;-webkit-animation:myhomeanimation 3s 3s;left:-100%;}
+#homeanimation>div:nth-child(1)>div:nth-child(5){ background-image:url(home-animation-arraow3.png);right:-100%;animation:myhomeanimation3 3s 6s;-webkit-animation:myhomeanimation3 3s 6s;}
+#homeanimation>div:nth-child(1)>div:nth-child(6){  background-image: url(home-animation-text3.png);animation:myhomeanimation 3s 6s;-webkit-animation:myhomeanimation 3s 6s;left:-100%;}
+#homeanimation>div:nth-child(1)>div:nth-child(7){ background-image:url(home-animation-arraow4.png);top:-100%;animation:myhomeanimation1 3s 9s;-webkit-animation:myhomeanimation1 3s 9s;}
+#homeanimation>div:nth-child(1)>div:nth-child(8){  background-image: url(home-animation-text4.png);animation:myhomeanimation 3s 9s;-webkit-animation:myhomeanimation 3s 9s;left:-100%;}
+#homeanimation>div:nth-child(1)>div:nth-child(9){ background-image:url(home-animation-arraow5.png);bottom:-100%;animation:myhomeanimation2 3s 12s;-webkit-animation:myhomeanimation2 3s 12s;animation-fill-mode:forwards;}
+#homeanimation>div:nth-child(1)>div:nth-child(10){  background-image: url(home-animation-text5.png);animation:myhomeanimation 3s 12s;-webkit-animation:myhomeanimation 3s 12s;left:-100%;animation-fill-mode:forwards;}
+
+@keyframes myhomeanimation{
+	form{left:-100%;}
+	50%{left:0;}
+	to{left:0;}
+}
+@-webkit-keyframes myhomeanimation{
+	form{left:-100%;}
+	50%{left:0;}
+	to{left:0;}
+}
+
+
+@keyframes myhomeanimation3{
+	form{right:-100%;}
+	50%{right:0;}
+	to{right:0;}
+}
+@-webkit-keyframes myhomeanimation3{
+	form{right:-100%;}
+	50%{right:0;}
+	to{right:0;}
+}
+
+
+@keyframes myhomeanimation1{
+	form{top:-100%;}
+	50%{top:0;}
+	to{top:0;}
+}
+@-webkit-keyframes myhomeanimation1{
+	form{top:-100%;}
+	50%{top:0;}
+	to{top:0;}
+}
+
+
+@keyframes myhomeanimation2{
+	form{bottom:-100%;}
+	50%{bottom:0;}
+	to{bottom:0;}
+}
+@-webkit-keyframes myhomeanimation2{
+	form{bottom:-100%;}
+	50%{bottom:0;}
+	to{bottom:0;}
+}
+
+
+#homeanimation>div:nth-child(3){position:absolute; width:100px; height:50px;  top:0; right:0;  }
+#homeanimation>div:nth-child(3)>img{ width:20px;margin-top:25px; cursor:pointer; }
+
+#homeanimation>div:nth-child(3)>img:nth-child(2){margin-left:5px;}

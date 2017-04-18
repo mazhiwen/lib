@@ -1,0 +1,51 @@
+
+.form-input{
+	display:block;margin-top: 20px;
+}
+.form-input span{ 
+/*label宽度*/
+	width: 110px;
+	text-align: left;
+	display: inline-block; 
+	 }
+	 
+input,select{
+	border: 1px solid rgb(0,162,202); 
+/*高度*/
+	height: 30px;
+/*input宽度*/
+	width: 200px;
+
+}
+
+
+input[type="radio"],input[type="checkbox"]{
+height: 0;
+/*input宽度*/
+width: 20px;
+cursor: pointer;
+}
+
+
+input:disabled{
+	background-color: rgb(242,242,242);
+}
+
+/*radio */
+.form-input>label{
+	margin-left: 10px;
+}
+
+.form-input>label:hover,select,input[type="radio"]{
+	cursor: pointer;
+}
+input:enabled:hover,select:hover{
+	border-color: orange;
+}
+textarea{
+	width: 100%;
+}
+
+
+
+

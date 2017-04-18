@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>hello</title>
+<!--<link rel="stylesheet" href="../sea-modules/bootstrap/3.3.5/css/bootstrap.css">-->
+<link rel="stylesheet" href="../css/component/chart-curve/1.0.0/chart-curve.css">
+</head>
+
+<body>
+<div id="container">
+  <CANVAS id="chart-curve">
+
+
+  </CANVAS> 
+  
+</div>
+
+<script src="../js/lib/seajs/seajs/2.2.0/sea.js"></script>
+<script>
+  seajs.config({
+    base: "../js/lib/",
+    alias: {
+      "jquery": "jquery/jquery/1.10.1/jquery.js",
+      "bootstrap": "bootstrap/3.3.5/js/bootstrap.js",
+      "angular": "angular/angularjs/1.5.6/angular.js" 
+    }
+  });
+
+seajs.use("../js/lib/chart-curve/1.0.0/indexChartCurve");
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head lang="zh-cn">
+<meta charset="utf-8">
+<link rel="stylesheet" href="../css/component/init/1.0.0/init.css">
+<title>title</title>
+</head>
+
+<body>
+<div id="container">
+
+
+	<div id="sub-content">
+		<div id="edit-article-outer">
+			<h4>标题</h4>
+			<input type="text" id="input-title">
+			<h4>内容</h4>
+			<div id="edit">
+			</div>
+			
+		</div>
+		
+		<button id="commit-button">确认</button>
+	</div>
+			
+
+
+	
+  		
+  		
+	
+</div>
+
+<script src="../js/lib/seajs/seajs/2.2.0/sea.js"></script>
+<script type="text/javascript" src="../js/lib/edit/uedit/1_4_3_3/utf8-php/utf8-php/ueditor.config.js"></script>
+<script type="text/javascript" src="../js/lib/edit/uedit/1_4_3_3/utf8-php/utf8-php/ueditor.all.js"></script>
+<script>
+  seajs.config({
+    base: "../js/lib/",
+    alias: {
+      "jquery": "jquery/jquery/1.10.1/jquery.js",
+       
+    }
+  });
+seajs.use("../js/main/uedit/1.0.0/uEdit");
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+
+.navigation-hori{list-style: none;padding: 0;text-align: center;background-color: rgb(229,229,229); text-align: left;}
+.navigation-hori>li{display: inline-block;padding:10px 0px;width: 100px;text-align: center; }
+.navigation-hori>li:hover{ background-color: rgb(242,242,242);cursor: pointer;}
+
+
+#edit-article-outer{ border:1px solid rgb(229,229,229); }
+.edit{width: 70%;margin: auto;border:1px solid rgb(0,162,202);}
+.edit>div:nth-child(1){height: 30px; background-color: rgb(242,242,242);border-bottom:1px solid rgb(0,162,202);}
+
+
+#edit-area{ width: 100%;height: 500px;}

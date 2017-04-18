@@ -1,0 +1,20 @@
+.paging{}
+.paging li{
+/*配置大小 width*/	
+width: 33px;	
+display: inline-block;
+cursor: pointer;box-sizing:border-box;
+text-align: center;
+background-color:  rgb(0,162,202);
+border-left: 1px solid rgb(249,250,252);
+}
+.paging>li:nth-child(1){border-left: 1px solid rgb(249,250,252);border-radius: 7px 0 0 7px;}
+.paging>li:last-child{border-right: 1px solid rgb(249,250,252);border-radius: 0 7px 7px 0;}
+.paging a{
+/*配置大小 padding*/	
+padding: 5px;
+font-size: 15px;
+color: white; display: inline-block;
+}
+
+.paging li:hover{background-color: rgb(51,181,212);};

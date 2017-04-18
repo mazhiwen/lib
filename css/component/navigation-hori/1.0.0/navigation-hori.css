@@ -1,0 +1,21 @@
+
+.navigation-hori{
+	overflow: hidden;
+	text-align: center;
+	background-color: rgb(229,229,229);
+	text-align: left;
+	border-radius:7px;
+	background: -webkit-linear-gradient(rgb(229,229,229),#FCFCFC);
+	background: -o-linear-gradient(rgb(229,229,229),#FCFCFC);
+	background: -moz-linear-gradient(rgb(229,229,229),#FCFCFC);
+	background: linear-gradient(rgb(229,229,229),#FCFCFC);
+
+}
+.navigation-hori>li{display: inline-block;padding:10px 0px;width: 100px;text-align: center;cursor: pointer; }
+
+.navigation-hori>li:hover{
+color: rgb(100,100,100);
+background: -moz-linear-gradient(rgb(200,200,200),#FCFCFC);
+ background: linear-gradient(rgb(200,200,200),#FCFCFC);
+
+}

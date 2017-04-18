@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../../bootstrap/3.3.5/fonts/glyphicons-halflings-regular.eot');
+  src: url('../../bootstrap/3.3.5/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../../bootstrap/3.3.5/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../../bootstrap/3.3.5/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../../bootstrap/3.3.5/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+
+.navigation-multi-level-ul{font-size: 14px;border-right: 1px solid black;}
+
+/*div 无链接   a 有链接*/
+.navigation-multi-level-ul div{cursor: default;}
+.navigation-multi-level-ul a{cursor: pointer;}
+/*1级导航*/
+.navigation-multi-level-ul>li{}
+.navigation-multi-level-ul>li>a,.navigation-multi-level-ul>li>div{background-color: rgba(0,0,0,0.1);padding-left:30px;box-sizing:border-box;}
+/*2级导航*/
+.navigation-multi-level-ul>li>ul{}
+.navigation-multi-level-ul>li>ul>li{}
+.navigation-multi-level-ul>li>ul>li>a,.navigation-multi-level-ul>li>ul>li>div{background-color: rgba(0,0,0,0.05);padding-left:50px;box-sizing:border-box; }
+/*3级导航*/
+.navigation-multi-level-ul>li>ul>li>ul{}
+.navigation-multi-level-ul>li>ul>li>ul>li{}
+.navigation-multi-level-ul>li>ul>li>ul>li>a{background-color: rgba(0,0,0,0.01);padding-left:70px;box-sizing:border-box; }
+/*块状导航  margin     非块状可用pading*/
+.navigation-multi-level-ul a,.navigation-multi-level-ul div{padding: 5px 0; display: inline-block; width: 100%;}
+
+/*所有导航前的  伪元素*/
+.navigation-multi-level-ul a::before,.navigation-multi-level-ul div::before{
+	font-family: 'Glyphicons Halflings';
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	content: "\e135";
+	vertical-align: bottom;
+	padding-right:3px;
+}
+
+
+

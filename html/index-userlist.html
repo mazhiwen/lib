@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>show data</title>
+<link rel="stylesheet" href="../css/component/bootstrap/3.3.5/css/bootstrap.css">
+<link rel="stylesheet" href="../css/component/userlist/1.0.0/user-list.css">
+<link rel="stylesheet" href="../css/component/jq-paging/1.0.0/paging.css">
+<link rel="stylesheet" href="../css/component/jq-choosedate/1.0.0/choosedate.css">
+</head>
+<body>
+<div id="container">
+
+	<form class="form-inline" id="choosedateform">
+		<div class="form-group" id="choosedateselect">
+			<label>时间粒度</label>
+			<select class="form-control" id="selectdate">
+				<option value="今日">今日</option>
+				<option value="昨日">昨日</option>
+				<option value="最近7天">最近7天</option>
+			</select>
+		</div>
+		<div class="form-group" id="dateframe">
+			<div class="input-group">
+               <span class="input-group-btn">
+                  <button class="btn btn-primary" type="button" id="activedate">自定义日期</button>
+               </span>
+               <input type="text" class="form-control" id="filldate" disabled>
+            </div>
+		</div>
+		<button type="button" class="btn btn-info" id="exportexcel" data-date="">导出excel表</button>
+	</form>
+	
+	<div id="countdata">
+		<span>当前注册数:</span>
+		<span id="countregister"></span>
+		<span>新增注册数:</span>
+		<span id="newregister"></span>
+		<span>新增审核通过数:</span>
+		<span id="newpass"></span>
+	</div>
+	
+	<div id="listtableframe">
+		<table  id="listtable" class="table table-hover table-bordered table-condensed">
+			<caption></caption>
+			<thead>
+				<tr>
+					<th>用户ID</th>
+					<th>真实姓名</th>
+					<th>机构</th>
+					<th>职称</th>
+					<th>手机号码</th>
+					<th>Email</th>
+					<th>名片</th>
+					<th>注册时间</th>
+					<th>审核状态</th>
+					<th>操作</th>
+					<th>分配投资顾问</th>
+				</tr>
+			</thead>
+			<tbody id="tablebody">
+				<tr data-userid="111">
+					<td>用户ID</td>
+					<td>真实姓名</td>
+					<td>职称</td>
+					<td>手机号码</td>
+					<td>Email</td>
+					<td>名片</td>
+					<td>注册时间</td>
+					<td>审核状态</td>
+					<td><button disabled class="passcheck btn-sm btn btn-primary">通过</button><button class="refusecheck btn btn-warning">拒绝</button></td>
+					<td><select><option value =""></option><option value ="volvo">Volvo</option><option value ="haha">haha</option><option value ="hehe">hehe</option></select></td>
+					
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+	<ul id="userlistpaging" class="pagination">
+	</ul>	
+</div>
+<script src="../js/lib/seajs/seajs/2.2.0/sea.js"></script>
+<script>
+
+  // Set configuration
+  seajs.config({
+    base: "../js/lib/",
+    alias: {
+      "jquery": "jquery/jquery/1.10.1/jquery.js",
+	  "bootstrap": "bootstrap/3.3.5/js/bootstrap.js",
+	  "chooseDate": "date-picker/1.0.0/chooseDate.js",
+	  "paging": "paging/1.0.0/paging.js",
+	  "Y_M_D_DayRegion": "y_m_d_dayregion/1.0.0/Y_M_D_DayRegion.js"
+	  
+    }
+  });
+
+  seajs.use("../js/main/userlist/1.0.0/indexUserlist");
+</script>
+</body>
+</html>

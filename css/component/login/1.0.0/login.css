@@ -1,0 +1,10 @@
+#container{text-align: center;}
+#login{background-color: red;display:inline-block}
+#login>div:nth-child(1)>label,#login>div:nth-child(2)>label{width:50px;text-align:center}
+#account,#password{width:250px;display:inline-block;}
+#login>div:nth-child(2){margin-top: 10px;}
+#login>button:nth-child(4){margin-left: 10px;}
+#login button{margin-top:10px}
+#login>div:nth-child(3){margin-top: 10px;text-align: left;}
+#login>div:nth-child(3)>label{}
+#login>div:nth-child(3)>a{float: right;}

@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>title</title>
+<link rel="stylesheet" href="../css/component/bootstrap/3.3.5/css/bootstrap.css">
+<link rel="stylesheet" href="../css/common/init/1.0.0/init.css">
+<link rel="stylesheet" href="../css/component/navigation-multi-level-ul/1.0.0/navigation-multi-level-ul.css">
+<link rel="stylesheet" href="../css/component/table-base/1.0.0/table.css">
+<link rel="stylesheet" href="../css/component/navigation-crumb/1.0.0/navigation-crumb.css">
+<link rel="stylesheet" href="../css/component/button/1.0.0/button.css">
+<link rel="stylesheet" href="../css/component/paging/1.0.0/paging.css">
+<link rel="stylesheet" href="../css/page/article-classify.css">
+
+</head>
+
+<body>
+<div id="container">
+	<div id="left-content">
+	<!--<ul id="navigation">
+			<li>
+				<div>内容管理</div>
+				<ul>
+					<li>
+						<div>文章管理</div>
+						<ul>
+							<li><a>文章分类</a></li>
+							<li><a>添加编辑分类</a></li>
+							<li><a>文章列表</a></li>
+							<li><a>添加/编辑文章</a></li>
+						</ul>
+					</li>
+					<li>
+						<div>资讯管理</div>
+						<ul>
+							<li><a>资讯列表</a></li>
+							<li><a>新闻抓取列表</a></li>
+							<li><a>上传/编辑早报</a></li>
+							<li><a>上传/编辑要闻</a></li>
+						</ul>
+					</li>
+					<li>
+						<div>专题管理</div>
+						<ul>
+							<li><a>专题列表</a></li>
+							<li><a>新建/编辑专题</a></li>
+						</ul>
+					</li>
+					<li>
+						<div>话题管理</div>
+						<ul>
+							<li><a>话题列表</a></li>
+							<li><a>新增/编辑话题</a></li>
+						</ul>
+					</li>
+					<li><a>匿名八卦管理</a></li>
+					<li><a>Q&A管理（尚未收到，待定）</a></li>
+				</ul>
+			</li>
+			<li>
+				<div>广告位管理</div>
+				<ul>
+					<li><a>广告列表</a></li>
+					<li><a>添加/编辑广告</a></li>
+				</ul>
+			</li>
+			<li>
+				<div>评论管理</div>
+				<ul>
+					<li><a>评论列表</a></li>
+					<li><a>评论详情</a></li>
+				</ul>
+			</li>
+			<li>
+				<div>推送管理</div>
+				<ul>
+					<li><a>系统消息推送列表</a></li>
+					<li><a>新增/编辑系统推送</a></li>
+					<li><a>APP内消息推送</a></li>
+					<li><a>新增/编辑APP内推送</a></li>
+				</ul>
+			</li>
+			<li>
+				<div>用户管理</div>
+				<ul>
+					<li><a>用户列表</a></li>
+					<li><a>添加/编辑用户</a></li>
+					<li><a>用户反馈列表</a></li>
+					<li><a>反馈详情</a></li>
+				</ul>
+			</li>
+			<li>
+				<div>权限管理</div>
+				<ul>
+					<li><a>角色管理</a></li>
+					<li><a>添加/编辑角色</a></li>
+					<li><a>管理员列表</a></li>
+					<li><a>添加/编辑管理员</a></li>
+				</ul>
+			</li>
+		</ul>-->
+	</div>
+	<div id="right-content">
+		<div id="title" class="navigation-crumb">
+			<span>内容管理</span>/<span>文章分类</span>/<span>呵呵</span>
+			<button>添加分类</button>
+		</div>
+		<table class="table">
+		    <caption></caption>
+		    <thead>
+		      <tr>
+		        <th>分类</th>
+		        <th>文章数量</th>
+		        <th>专题数量</th>
+		        <th>是否在前台显示</th>
+		        <th>排序（该分类在导航栏顺序）</th>
+		        <th>操作</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		      <tr>
+		        <td>一级分类</td>
+		        <td>2</td>
+		        <td>3</td>
+		        <td><span class="glyphicon glyphicon-user">ds</span></td>
+		        <td>1</td>
+		        <td><a href="#">编辑</a> <a href="#">删除</a></td>
+		      </tr>
+		      <tr>
+		        <td>一级分类</td>
+		        <td>2</td>
+		        <td>3</td>
+		        <td><span class="glyphicon glyphicon-user">ds</span></td>
+		        <td>1</td>
+		        <td>倒萨</td>
+		      </tr>
+		      <tr>
+		        <td>一级分类</td>
+		        <td>2</td>
+		        <td>3</td>
+		        <td><span class="glyphicon glyphicon-user">ds</span></td>
+		        <td>1</td>
+		        <td>倒萨</td>
+		      </tr>
+		      
+		    </tbody>
+  		</table>
+  		<ul class="pagination paging" id="paging"></ul>
+	</div>
+</div>
+<!--
+<script src="../js/lib/seajs/2.2.0/sea.js"></script>
+<script>
+  seajs.config({
+    base: "../js/",
+    alias: {
+      "jquery": "lib/jquery/1.10.1/jquery.js",
+      "bootstrap": "lib/bootstrap/3.3.5/bootstrap.js",
+      "navigationMultiLevelUl": "modules/navigation-multi-level-ul/1.0.0/navigationMultiLevelUl.js" 
+    }
+  });
+
+seajs.use("../js/main/articleClassify");
+</script>-->
+
+
+<script src="../js/lib/seajs/seajs/2.2.0/sea.js"></script>
+<script>
+  seajs.config({
+    base: "../js/lib/",
+    alias: {
+      "jquery": "jquery/jquery/1.10.1/jquery.js",
+      "bootstrap": "bootstrap/3.3.5/bootstrap.js",
+      "navigationMultiLevelUl": "navigation-multi-level-ul/1.0.0/navigationMultiLevelUl.js",
+      "getGet": "getGet/1.0.0/getGet.js",
+      "paging": "paging/1.0.0/paging.js" 
+    }
+  });
+
+seajs.use("../js/main/article-classify/1.0.0/articleClassify");
+</script>
+</body>
+</html>

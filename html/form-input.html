@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head lang="zh-cn">
+<meta charset="utf-8">
+<link rel="stylesheet" href="../css/component/init/1.0.0/init.css">
+<link rel="stylesheet" href="../css/component/form-input/1.0.0/form-input.css">
+
+<title>title</title>
+</head>
+
+<body>
+<div id="container">
+<!--垂直表单-->
+	<label class="form-input"><span>分类名称:</span><input type="text" placeholder="名称"></label>
+	<label class="form-input"><span>上级分类:</span><select><option>d</option><option>22d</option></select></label>
+	<label class="form-input"><span>排序:</span><input type="text" disabled value="51"></label>
+	<label class="form-input"><span>是否:</span><input type="checkbox" name=""></label>
+	<label class="form-input"><span>color</span><input type="color"></label>
+	<label class="form-input"><span>date</span><input type="date"></label>
+	<label class="form-input"><span>image</span><input type="image"></label>
+	<label class="form-input"><span>password</span><input type="password"></label>
+	<label class="form-input"><span>range</span><input type="range" min="50" max="500"></label>
+	<label class="form-input"><span>datetime</span><input type="datetime"></label>
+	<label class="form-input"><span>datetime-local</span><input type="datetime-local"></label>
+	<div class="form-input"><span>是否在前台展示:</span><label><input type="radio"  name="is">是</label><label><input type="radio"  name="is">否</label></div>	
+	<div id="confirm-outer"><button>确认</button></div>
+
+<!--水平表单 去掉form-input class -->
+	<label><span>分类名称:</span><input type="text" placeholder="名称"></label>
+	<label><span>上级分类:</span><select><option>d</option><option>22d</option></select></label>
+</div>
+
+</body>
+</html>
